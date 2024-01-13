@@ -1,0 +1,29 @@
+2024-01-13 17:46:15,892 - ERROR - ('28000', '[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'Thangquyeenf\'. (18456) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Computer_Components" requested by the login. The login failed. (4060); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'Thangquyeenf\'. (18456); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Computer_Components" requested by the login. The login failed. (4060)')
+2024-01-13 17:46:15,969 - INFO - connect successfully
+2024-01-13 17:46:15,970 - INFO - Create a new database: Computer_Components
+2024-01-13 17:46:16,307 - INFO - Database 'Computer_Components' created successfully.
+2024-01-13 17:46:16,307 - INFO - Reconnect to new Database Computer_Components
+2024-01-13 17:46:16,362 - INFO - connect successfully
+2024-01-13 17:46:16,381 - INFO - Table 'DIM_CPU_PROD' created successfully.
+2024-01-13 17:46:16,477 - INFO - Data inserted into table 'DIM_CPU_PROD'.
+2024-01-13 17:46:16,485 - INFO - Table 'DIM_CRYPTO_DATA' created successfully.
+2024-01-13 17:46:16,493 - INFO - Data inserted into table 'DIM_CRYPTO_DATA'.
+2024-01-13 17:46:16,507 - INFO - Table 'DIM_GPU_PROD' created successfully.
+2024-01-13 17:46:16,531 - INFO - Data inserted into table 'DIM_GPU_PROD'.
+2024-01-13 17:46:16,543 - INFO - Table 'DIM_MERCHANT' created successfully.
+2024-01-13 17:46:16,551 - INFO - Data inserted into table 'DIM_MERCHANT'.
+2024-01-13 17:46:16,567 - INFO - Table 'DIM_RAM_PROD' created successfully.
+2024-01-13 17:46:16,601 - INFO - Data inserted into table 'DIM_RAM_PROD'.
+2024-01-13 17:46:16,607 - INFO - Table 'DIM_REGION' created successfully.
+2024-01-13 17:46:16,613 - INFO - Data inserted into table 'DIM_REGION'.
+2024-01-13 17:46:16,622 - INFO - Table 'DIM_TIME' created successfully.
+2024-01-13 17:46:16,634 - INFO - Data inserted into table 'DIM_TIME'.
+2024-01-13 17:46:17,737 - INFO - Table 'FACT_CPU_PRICE' created successfully.
+2024-01-13 17:46:27,109 - INFO - Data inserted into table 'FACT_CPU_PRICE'.
+2024-01-13 17:46:27,163 - INFO - Table 'FACT_CRYPTO_RATE' created successfully.
+2024-01-13 17:46:27,272 - INFO - Data inserted into table 'FACT_CRYPTO_RATE'.
+2024-01-13 17:46:27,800 - INFO - Table 'FACT_GPU_PRICE' created successfully.
+2024-01-13 17:46:31,913 - INFO - Data inserted into table 'FACT_GPU_PRICE'.
+2024-01-13 17:46:34,014 - INFO - Table 'FACT_RAM_PRICE' created successfully.
+2024-01-13 17:46:54,091 - INFO - Data inserted into table 'FACT_RAM_PRICE'.
+2024-01-13 17:46:54,091 - INFO - Implement Database Successfully

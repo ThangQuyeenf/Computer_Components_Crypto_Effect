@@ -1,0 +1,141 @@
+USE [Computer_Components]
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (0, 1, AMD, Amd 2650, Amd Sempron 2650, 2, AMD Socket AM1)
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (1, 2, AMD, Amd 3850, Amd Sempron 3850, 4, AMD Socket AM1)
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (2, 3, AMD, Amd 5150, Amd Athlon 5150, 4, AMD Socket AM1)
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (3, 4, AMD, Amd 5350, Amd Athlon 5350, 4, AMD Socket AM1)
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (4, 5, AMD, Amd A-Series, Amd A10 Pro-7850B, 4, AMD Socket FM2+)
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (5, 6, AMD, Amd A-Series, Amd A10-5700, 4, AMD Socket FM2)
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (6, 7, AMD, Amd A-Series, Amd A10-5800K, 4, AMD Socket FM2)
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (7, 8, AMD, Amd A-Series, Amd A10-6700, 4, AMD Socket FM2)
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (8, 9, AMD, Amd A-Series, Amd A10-6700T, 4, AMD Socket FM2)
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (9, 10, AMD, Amd A-Series, Amd A10-6790B, 4, AMD Socket FM2)
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (10, 11, AMD, Amd A-Series, Amd A10-6790K, 4, AMD Socket FM2)
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (11, 12, AMD, Amd A-Series, Amd A10-6800B, 4, AMD Socket FM2)
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (12, 13, AMD, Amd A-Series, Amd A10-6800K, 4, AMD Socket FM2)
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (13, 14, AMD, Amd A-Series, Amd A10-7700K, 4, AMD Socket FM2+)
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (14, 15, AMD, Amd A-Series, Amd A10-7800, 4, AMD Socket FM2+)
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (15, 16, AMD, Amd A-Series, Amd A10-7850K, 4, AMD Socket FM2+)
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (16, 17, AMD, Amd A-Series, Amd A10-7860K, 4, AMD Socket FM2+)
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (17, 18, AMD, Amd A-Series, Amd A10-7870K, 4, AMD Socket FM2+)
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (18, 19, AMD, Amd A-Series, Amd A10-7890K, 4, AMD Socket FM2+)
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+INSERT INTO DIM_CPU_PROD (Id, Manufacturer, Series, CPU_Name, Cores, Socket)
+VALUES (19, 20, AMD, Amd A-Series, Amd A10-9700, 4, AMD Socket AM4)
+GO

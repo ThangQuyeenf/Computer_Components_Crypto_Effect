@@ -1,0 +1,8 @@
+/.history/
+/venv3.11/*
+/src/.env
+*/*/__pycache__
+*/__pycache__
+.vscode
+/data/
+12.pbix
