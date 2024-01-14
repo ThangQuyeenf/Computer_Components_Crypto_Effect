@@ -176,7 +176,7 @@ JOIN
 WHERE
     Prices.[PriceRank] = 1;
 
--- GPU and RAM
+-- GPU 
 WITH RankedGPUPrices AS (
     SELECT
         GPU.[Id] AS ProdId,
@@ -187,17 +187,6 @@ WITH RankedGPUPrices AS (
         [dbo].[DIM_GPU_PROD] AS GPU
     JOIN
         [dbo].[FACT_GPU_PRICE] AS Price ON GPU.[Id] = Price.[ProdId]
-),
-RankedRAMPrices AS (
-    SELECT
-        RAM.[Id] AS ProdId,
-        Price.[TimeId],
-        Price.[Price_USD],
-        ROW_NUMBER() OVER (PARTITION BY RAM.[Id] ORDER BY Price.[Price_USD] DESC) AS PriceRank
-    FROM
-        [dbo].[DIM_RAM_PROD] AS RAM
-    JOIN
-        [dbo].[FACT_RAM_PRICE] AS Price ON RAM.[Id] = Price.[ProdId]
 )
 SELECT
     'GPU' AS ProductType,
@@ -210,7 +199,20 @@ JOIN
     RankedGPUPrices AS GPUPrices ON GPU.[Id] = GPUPrices.[ProdId]
 WHERE
     GPUPrices.[PriceRank] = 1
-UNION
+
+
+-- RAM
+WITH RankedRAMPrices AS (
+    SELECT
+        RAM.[Id] AS ProdId,
+        Price.[TimeId],
+        Price.[Price_USD],
+        ROW_NUMBER() OVER (PARTITION BY RAM.[Id] ORDER BY Price.[Price_USD] DESC) AS PriceRank
+    FROM
+        [dbo].[DIM_RAM_PROD] AS RAM
+    JOIN
+        [dbo].[FACT_RAM_PRICE] AS Price ON RAM.[Id] = Price.[ProdId]
+)
 SELECT
     'RAM' AS ProductType,
     RAM.*,
