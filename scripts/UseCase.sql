@@ -224,3 +224,52 @@ JOIN
     RankedRAMPrices AS RAMPrices ON RAM.[Id] = RAMPrices.[ProdId]
 WHERE
     RAMPrices.[PriceRank] = 1;
+	
+	
+
+
+-- What are the details of prices and technical specifications for the CPU with the highest price of all time?
+--	What are the details of prices and technical specifications for the GPU with the highest price of all time?
+--	What are the details of prices and technical specifications for the RAM with the highest price of all time?
+
+USE [Computer_Components]
+
+SELECT
+    T.[Year],
+    T.[Month],
+    T.[Day],
+    CPU.[CPU_Name],
+    CPU.[Manufacturer] AS CPU_Manufacturer,
+    GPU.[Processor_Manufacturer] AS GPU_Processor_Manufacturer,
+    GPU.[Memory_Type] AS GPU_Memory_Type,
+    RAM.[Manufacturer] AS RAM_Manufacturer,
+    RAM.[Memory_Type] AS RAM_Memory_Type,
+    CPU_Price.[RegionId],
+    CPU_Price.[Price_USD] AS CPU_Price,
+    GPU_Price.[Price_USD] AS GPU_Price,
+    RAM_Price.[Price_USD] AS RAM_Price,
+    Crypto.[Code],
+    CryptoRate.[ClosePrice] AS Crypto_ClosePrice
+FROM
+    [dbo].[DIM_TIME] AS T
+JOIN
+    [dbo].[FACT_CPU_PRICE] AS CPU_Price ON T.[Id] = CPU_Price.[TimeId]
+JOIN
+    [dbo].[DIM_CPU_PROD] AS CPU ON CPU_Price.[ProdId] = CPU.[Id]
+JOIN
+    [dbo].[FACT_GPU_PRICE] AS GPU_Price ON T.[Id] = GPU_Price.[TimeId]
+JOIN
+    [dbo].[DIM_GPU_PROD] AS GPU ON GPU_Price.[ProdId] = GPU.[Id]
+JOIN
+    [dbo].[FACT_RAM_PRICE] AS RAM_Price ON T.[Id] = RAM_Price.[TimeId]
+JOIN
+    [dbo].[DIM_RAM_PROD] AS RAM ON RAM_Price.[ProdId] = RAM.[Id]
+JOIN
+    [dbo].[FACT_CRYPTO_RATE] AS CryptoRate ON T.[Id] = CryptoRate.[TimeId]
+JOIN
+    [dbo].[DIM_CRYPTO_DATA] AS Crypto ON CryptoRate.[CodeId] = Crypto.[Id]
+WHERE
+    CPU_Price.[MerchantId] = 1  -- Thay đổi MerchantId theo điều kiện cụ thể 
+    AND GPU_Price.[MerchantId] = 1
+    AND RAM_Price.[MerchantId] = 1;
+
